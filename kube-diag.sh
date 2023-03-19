@@ -26,7 +26,7 @@ echo -e "\n*****************************************************\n"
 echo -e "Checking connectivity to New Relic Endpoint\n"
 echo -e "*****************************************************\n"
 
-kubectl run -i --tty --rm debug --image=curlimages/curl --restart=Never -- https://metric-api.newrelic.com -vvv
+kubectl run -i --tty --rm kube-diag --image=curlimages/curl --restart=Never -- https://metric-api.newrelic.com -vvv
 
 # Check HELM releases
 echo -e "\n*****************************************************\n"
