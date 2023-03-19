@@ -1,9 +1,9 @@
 # kube-diag
 
-A simple bash script to check the health of a New Relic-enabled Kubernetes cluster.
+A simple bash script to check the health of a New Relic enabled Kubernetes cluster.
 
 The script runs standard Kubernetes commands in the newrelic namespace and creates an output file.
-The output can be helpful to troubleshoot issues.
+The output can be helpful in troubleshooting issues.
 
 
 # Usage
