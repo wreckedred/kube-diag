@@ -16,7 +16,7 @@ Run from instance with access to cluster. The namespace will typically be either
 ```
 wget https://raw.githubusercontent.com/wreckedred/kube-diag/main/kube-diag.sh
 chmod +x kube-diag.sh
-./pixie-diag.sh newrelic
+./kube-diag.sh newrelic
 ```
 
 # Output
