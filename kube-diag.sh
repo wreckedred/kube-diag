@@ -21,6 +21,13 @@ namespace=$1
 # Create a log file
 exec > >(tee -a "$PWD/kube_diag_$timestamp.log") 2>&1
 
+# Check connectivity to New Relic endpoint
+echo -e "\n*****************************************************\n"
+echo -e "Checking connectivity to New Relic Endpoint\n"
+echo -e "*****************************************************\n"
+
+kubectl run -i --tty --rm debug --image=curlimages/curl --restart=Never -- https://metric-api.newrelic.com -vvv
+
 # Check HELM releases
 echo -e "\n*****************************************************\n"
 echo -e "Checking HELM releases\n"
